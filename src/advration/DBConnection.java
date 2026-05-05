@@ -8,7 +8,7 @@ public class DBConnection {
             // Update these credentials if your local MySQL setup is different
             String url = "jdbc:mysql://localhost:3306/rationdb";
             String user = "root";
-            String password = "Thejaswini@242005"; 
+            String password = "";// your database password
             return DriverManager.getConnection(url, user, password);
         } catch (SQLException e) {
             System.err.println("Database Connection Failed: " + e.getMessage());
